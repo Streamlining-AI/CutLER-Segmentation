@@ -5,7 +5,7 @@
 		  "type" : "image",
 		  "description" : "Input image",
 		  "default" : "https://replicate.delivery/pbxt/IDVbiwFxkD4kR14WwPS6P9ZeB4tTvr0WwPoxQ1CM1ljSD5EZ/demo1.jpeg"
-	  }
+	  },
       {
         "name" : "model",
         "type" : "str",
@@ -35,7 +35,7 @@
             "ge" : 0,
             "le" : 1
         }
-      },
+      }
   ],
 	"output" : 
 	   {
