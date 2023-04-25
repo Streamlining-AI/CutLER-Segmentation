@@ -22,7 +22,7 @@
         "default" : 3,
         "description" : "The maximum number of pseudo-masks per image",
         "optional" : {
-            "ge" : 0,
+            "ge" : 1,
             "le" : 10
         }
       },
@@ -32,7 +32,7 @@
         "default" : 0.15,
         "description" : "Threshold used for producing binary graph",
         "optional" : {
-            "ge" : 0,
+            "ge" : 0.01,
             "le" : 1
         }
       }
