@@ -3,9 +3,39 @@
 	  {
 		  "name": "image",
 		  "type" : "image",
-		  "description" : "example",
-		  "default" : "https://bucketeer-be99e627-94e7-4e5b-a292-54eeb40ac303.s3.amazonaws.com/public/models_models_cover_image/8faf1a87-e796-4ee5-83e1-385184220187/Screenshot_from_2022-06-17_13-12-.png"
+		  "description" : "Input image",
+		  "default" : "https://replicate.delivery/pbxt/IDVbiwFxkD4kR14WwPS6P9ZeB4tTvr0WwPoxQ1CM1ljSD5EZ/demo1.jpeg"
 	  }
+      {
+        "name" : "model",
+        "type" : "str",
+        "default" : "base",
+        "description" : "Choose the model architecture",
+        "optional" : {
+            "choices" : ["base", "small"]
+        }
+
+      },
+      {
+        "name" : "n_pseudo_masks",
+        "type" : "int",
+        "default" : 3,
+        "description" : "The maximum number of pseudo-masks per image",
+        "optional" : {
+            "ge" : 0,
+            "le" : 10
+        }
+      },
+      {
+        "name" : "tau",
+        "type" : "float",
+        "default" : 0.15,
+        "description" : "Threshold used for producing binary graph",
+        "optional" : {
+            "ge" : 0,
+            "le" : 1
+        }
+      },
   ],
 	"output" : 
 	   {
